@@ -1,0 +1,15 @@
+{
+  "date": "01/28/2020",
+  "distribution": false,
+  "expires": "03/29/2020",
+  "fileSystemAllowed": true,
+  "licensefileversion": "1.1",
+  "localhost": true,
+  "oobAllowed": false,
+  "package": "complete",
+  "product": "yFiles for HTML",
+  "type": "eval",
+  "version": "2.2",
+  "watermark": "yFiles HTML Evaluation License (expires in ${license-days-remaining} days)",
+  "key": "1fd095ef90c0495649f135b6a54f083b3f10191b"
+}
