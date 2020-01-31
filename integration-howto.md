@@ -14,7 +14,9 @@ Adding yFiles as a dependency is as easy as installing an external library from 
 
 1. Add yFiles for HTML as npm dependency to the created project:
 
-   - If you have a fresh yFiles for HTML package, you need to `npm pack` the library first by running `npm pack` in `<yfiles-package>/lib/es-module/`. This creates a tar-ball that can be installed as npm dependency in other projects. See also [Working with the yFiles npm Module](https://docs.yworks.com/yfileshtml/#/dguide/yfiles_npm_module#yfiles_npm_module).
+   - If you have a fresh yFiles for HTML package, you need to `npm pack` the library first by
+     running `npm pack` in `<yfiles-package>/lib/es-modules/`. This creates a tarball
+     that can be installed as npm dependency in other projects. See also [Working with the yFiles npm Module](https://docs.yworks.com/yfileshtml/#/dguide/yfiles_npm_module#yfiles_npm_module).
 
      Note: This sample project runs `npm pack` as `preinstall` script in the `package.json`.
 
@@ -32,17 +34,17 @@ After installing the dependency, you can import classes from `yfiles` in your pr
 
 ## Integrate a basic yFiles graph component
 
-With the yFiles dependency, you can easily create a new Angular component that contains a yFiles GraphComponent.
+With the yFiles dependency, you can easily create a new React component that contains a yFiles GraphComponent.
 
 1. Create a new `ReactGraphComponent.js` file in `/src/` which instantiates a new yFiles GraphComponent with editing capabilities and a basic sample graph.
 
    Note how the yFiles GraphComponent is added to the DOM by providing a reference to an empty `div` element in which it is supposed to be created.
 
-   See the content of `/src/ReactGraphComponent.js` in this repository for the full implementation.
+   See the contents of `/src/ReactGraphComponent.js` in this repository for the full implementation.
 
    There are two things to look out for:
 
-   - Make sure to configure your `license.json` at the library.
+   - Make sure to configure your `license.json` for the library.
    - Make sure to include `yfiles.css`, which is an integral part of the library. For example add `import 'yfiles/yfiles.css'` as in `ReactGraphComponent.js`.
 
 2. Afterwards, just add the new React component to the `App.js`.
@@ -51,6 +53,9 @@ And that's it. Run `npm run start` to serve the application at [http://localhost
 
 ## Enhanced development support with yfiles-typeinfo
 
-This project also utilizes `yfiles-typeinfo.js` from the yFiles package (see index.html). `yfiles-typeinfo.js` adds additional type runtime checks to yFiles related method calls and yields readable exception messages to easier identify problem in JavaScript code. For more details see [Type Checking](https://docs.yworks.com/yfileshtml/#/dguide/DevelopmentSupport#DevelopmentSupport-Checks).
+This project also utilizes `yfiles-typeinfo.js` from the yFiles package (see index.html).
+`yfiles-typeinfo.js` adds additional type runtime checks to yFiles related method calls and
+yields readable exception messages to identify problems in JavaScript code more easily.
+For more details see [Type Checking](https://docs.yworks.com/yfileshtml/#/dguide/DevelopmentSupport#DevelopmentSupport-Checks).
 
-Please note that these additional checks increase the runtime of the application, therefore it should only be used during development and removed for actual deployment. See also [Including yfiles-typinfo.js](https://docs.yworks.com/yfileshtml/#/dguide/deployment_toolkits#_including_yfiles_typeinfo_js) in Webpack to learn how to load it conditionally for the development build.
+Please note that these additional checks degrade the performance of the application slightly, therefore it should only be used during development and removed for actual deployment. See also [Including yfiles-typinfo.js](https://docs.yworks.com/yfileshtml/#/dguide/deployment_toolkits#_including_yfiles_typeinfo_js) in Webpack to learn how to load it conditionally for the development build.

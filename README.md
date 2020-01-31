@@ -33,7 +33,7 @@ npm run start
 
 ## Under the Hood
 
-This project is a default `create-react-app` application, where yFiles was added as additional dependency to integrate a basic graph component.
+This project is a default `create-react-app` application, where yFiles was added as an additional dependency to integrate a basic graph component.
 
 A step-by-step description of how to integrate yFiles in a React application can be found [here](integration-howto.md).
 
@@ -49,4 +49,5 @@ Furthermore, there is an extensive [Developer's Guide](https://docs.yworks.com/y
 
 ## Support
 
-If you need help with your setup or a certain feature, don't hesitate to contact our support through the [Evaluation Center](https://my.yworks.com/) or by email yfileshtml@yworks.com.
+If you need help with your setup or a certain feature, don't hesitate to contact our support through
+the [Customer Center](https://my.yworks.com/) or by email [yfileshtml@yworks.com](mailto:yfileshtml@yworks.com).
