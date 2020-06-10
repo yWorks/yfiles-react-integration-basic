@@ -14,17 +14,17 @@ Adding yFiles as a dependency is as easy as installing an external library from 
 
 1. Add yFiles for HTML as npm dependency to the created project:
 
-   - If you have a fresh yFiles for HTML package, you need to `npm pack` the library first by
-     running `npm pack` in `<yfiles-package>/lib/es-modules/`. This creates a tarball
-     that can be installed as npm dependency in other projects. See also [Working with the yFiles npm Module](https://docs.yworks.com/yfileshtml/#/dguide/yfiles_npm_module#yfiles_npm_module).
+   - If you have a fresh yFiles for HTML package, you need to prepare the library package first by running `npm install` in the
+     package folder. This creates the development library and a tarball that can be installed as npm dependency in
+     other projects. See also [Working with the yFiles npm Module](https://docs.yworks.com/yfileshtml/#/dguide/yfiles_npm_module#yfiles_npm_module).
 
-     Note: This sample project runs `npm pack` as `preinstall` script in the `package.json`.
+     Note: This sample project runs `npm install` as `preinstall` script in the `package.json`.
 
-   - Afterwards, all you need to do is to reference the packed library in the `package.json` of the project as additional dependency:
+   - Reference the packed library in the `package.json` of the project:
      ```
      "dependencies": {
        ...
-       "yfiles": "../yFiles-for-HTML-Complete-2.2.0.3-Evaluation/lib/es-modules/yfiles-22.0.3-eval.tgz"
+       "yfiles": "../yFiles-for-HTML-Complete-2.3-Evaluation/lib-dev/es-modules/yfiles-23.0.0-eval-dev.tgz"
      },
      ```
 
@@ -51,11 +51,11 @@ With the yFiles dependency, you can easily create a new React component that con
 
 And that's it. Run `npm run start` to serve the application at [http://localhost:3000/](http://localhost:3000/) with a basic yFiles component.
 
-## Enhanced development support with yfiles-typeinfo
+## Development Mode
 
-This project also utilizes `yfiles-typeinfo.js` from the yFiles package (see index.html).
-`yfiles-typeinfo.js` adds additional type runtime checks to yFiles related method calls and
+This project uses the yFiles development library from the yFiles package. The development library adds additional
+type runtime checks to yFiles related method calls and
 yields readable exception messages to identify problems in JavaScript code more easily.
-For more details see [Type Checking](https://docs.yworks.com/yfileshtml/#/dguide/DevelopmentSupport#DevelopmentSupport-Checks).
+For more details see [Development Mode](http://docs.yworks.com/yfileshtml/#/dguide/yfiles_development_mode).
 
-Please note that these additional checks degrade the performance of the application slightly, therefore it should only be used during development and removed for actual deployment. See also [Including yfiles-typinfo.js](https://docs.yworks.com/yfileshtml/#/dguide/deployment_toolkits#_including_yfiles_typeinfo_js) in Webpack to learn how to load it conditionally for the development build.
+Please note that these additional checks degrade the performance of the application slightly, therefore it should only be used during development. See also [Preparing the Development Mode Library for Production](https://docs.yworks.com/yfileshtml/#/dguide/deployment#dev-deployment) in Webpack to learn how to switch between development and production mode.
