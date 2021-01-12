@@ -1,22 +1,22 @@
 {
   "name": "yfiles-react-integration-basic",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "author": "yWorks GmbH <yfileshtml@yworks.com>",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.9.0",
-    "@testing-library/react": "^10.0.6",
-    "@testing-library/user-event": "^11.0.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1",
-    "yfiles": "../yFiles-for-HTML-Complete-2.3.0.3-Evaluation/lib-dev/es-modules/yfiles-23.0.2-eval-dev.tgz"
+    "@testing-library/jest-dom": "^5.11.6",
+    "@testing-library/react": "^11.2.2",
+    "@testing-library/user-event": "^12.6.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-scripts": "4.0.1",
+    "yfiles": "../yFiles-for-HTML-Complete-2.3.0.4-Evaluation/lib-dev/es-modules/yfiles-23.0.4-eval-dev.tgz"
   },
   "scripts": {
-    "preinstall": "cd ../yFiles-for-HTML-Complete-2.3.0.3-Evaluation && npm run prepare-package",
-    "postinstall": " node -e \"require('fs').copyFileSync('../yFiles-for-HTML-Complete-2.3.0.3-Evaluation/lib/license.json','./src/license.json')\"",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "preinstall": "cd ../yFiles-for-HTML-Complete-2.3.0.4-Evaluation && npm run prepare-package",
+    "postinstall": " node -e \"require('fs').copyFileSync('../yFiles-for-HTML-Complete-2.3.0.4-Evaluation/lib/license.json','./src/license.json')\"",
+    "start": "react-scripts --expose-gc --max-old-space-size=8192 start",
+    "build": "react-scripts --expose-gc --max-old-space-size=8192 build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
