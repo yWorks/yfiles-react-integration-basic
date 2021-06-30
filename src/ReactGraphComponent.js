@@ -1,6 +1,5 @@
-import 'yfiles/yfiles.css'
 import React, { Component } from 'react'
-import {GraphComponent, GraphEditorInputMode, License, Point, Rect} from 'yfiles'
+import { GraphComponent, GraphEditorInputMode, License, Point, Rect } from 'yfiles'
 import licenseData from './license'
 
 License.value = licenseData
@@ -50,7 +49,7 @@ export default class ReactGraphComponent extends Component {
     return (
       <div
         className="graph-component-container"
-        ref={node => {
+        ref={(node) => {
           this.div = node
         }}
       />

@@ -1,6 +1,6 @@
 import React from 'react'
-import logo from './yfiles-logo.svg';
-import './App.css';
+import logo from './yfiles-logo.svg'
+import './App.css'
 import ReactGraphComponent from './ReactGraphComponent.js'
 
 function App() {
@@ -10,9 +10,9 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <h1>A Basic yFiles Integration in React</h1>
       </header>
-      <ReactGraphComponent/>
+      <ReactGraphComponent />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

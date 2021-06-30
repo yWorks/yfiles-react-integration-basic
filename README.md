@@ -8,8 +8,8 @@ This sample application serves as a basic scaffold of how to integrate [yFiles f
 
 ## Version Information
 
-- create-react-app v3.3.0
-- yFiles for HTML 2.3
+- create-react-app v4.0.3
+- yFiles for HTML 2.4
 
 ## Getting Started
 

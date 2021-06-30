@@ -24,7 +24,7 @@ Adding yFiles as a dependency is as easy as installing an external library from 
      ```
      "dependencies": {
        ...
-       "yfiles": "../yFiles-for-HTML-Complete-2.3.0.3-Evaluation/lib-dev/es-modules/yfiles-23.0.2-eval-dev.tgz"
+       "yfiles": "../yFiles-for-HTML-Complete-2.4.0.0-Evaluation/lib-dev/es-modules/yfiles-24.0.0-eval-dev.tgz"
      },
      ```
 
@@ -45,7 +45,6 @@ With the yFiles dependency, you can easily create a new React component that con
    There are two things to look out for:
 
    - Make sure to configure your `license.json` for the library.
-   - Make sure to include `yfiles.css`, which is an integral part of the library. For example add `import 'yfiles/yfiles.css'` as in `ReactGraphComponent.js`.
 
 2. Afterwards, just add the new React component to the `App.js`.
 
