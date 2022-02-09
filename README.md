@@ -47,6 +47,13 @@ There is also a slightly bigger [React integration demo](https://live.yworks.com
 
 Furthermore, there is an extensive [Developer's Guide](https://docs.yworks.com/yfileshtml/#/dguide/introduction#top) that covers anything from graph creation and styling to automatic layouts and advanced customizations.
 
+## Create a Diagram Application with React
+
+The [App Generator](https://www.yworks.com/products/app-generator) is a tool that lets you interactively create a diagram
+application prototype to visualize your data. Select features like editing, context menu, graph search, or printing
+and customize the interaction with the graph. Generate React code for your prototype and use it with a valid
+[yFiles for HTML](https://www.yworks.com/products/yfiles-for-html) version.
+
 ## Support
 
 If you need help with your setup or a certain feature, don't hesitate to contact our support through
