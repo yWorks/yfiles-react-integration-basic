@@ -5,25 +5,31 @@ import licenseData from './license'
 License.value = licenseData
 
 export default class ReactGraphComponent extends Component {
-  constructor(props) {
-    super(props)
-
-    // instantiate a new GraphComponent
-    this.graphComponent = new GraphComponent()
-
-    // configure an input mode for out of the box editing
-    this.graphComponent.inputMode = new GraphEditorInputMode()
-  }
-
   componentDidMount() {
+    if (!this.graphComponent) {
+      // instantiate a new GraphComponent once
+      this.graphComponent = this.initializeGraphComponent()
+    }
     // append the GraphComponent to the DOM
     this.div.appendChild(this.graphComponent.div)
-
-    // create some graph elements
-    this.createSampleGraph(this.graphComponent.graph)
-
-    // center the newly created graph
+    // center the content of the GraphComponent after it was added to the DOM
     this.graphComponent.fitGraphBounds()
+  }
+
+  componentWillUnmount() {
+    // Remove the GraphComponent on unmount.
+    // Depending on the use case, you may also clear the GraphComponent entirely and create a
+    // new one on each unmount / mount cycle.
+    this.div.removeChild(this.graphComponent.div)
+  }
+
+  initializeGraphComponent() {
+    const graphComponent = new GraphComponent()
+    // configure an input mode for out of the box editing
+    graphComponent.inputMode = new GraphEditorInputMode()
+    // create some graph elements
+    this.createSampleGraph(graphComponent.graph)
+    return graphComponent
   }
 
   createSampleGraph(graph) {

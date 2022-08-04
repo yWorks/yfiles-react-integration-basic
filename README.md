@@ -8,8 +8,8 @@ This sample application serves as a basic scaffold of how to integrate [yFiles f
 
 ## Version Information
 
-- create-react-app v4.0.3
-- yFiles for HTML 2.4
+- create-react-app v5.0.1
+- yFiles for HTML 2.5
 
 ## Getting Started
 
@@ -43,7 +43,7 @@ This basic yFiles integration can be used as a starting point to test the capabi
 
 You can browse through the demos and look for features that you find interesting for your use case and integrate it in this basic component to build a more sophisticated application.
 
-There is also a slightly bigger [React integration demo](https://live.yworks.com/demos/toolkit/react/index.html) available in the package and on [GitHub](https://github.com/yWorks/yfiles-for-html-demos/tree/master/demos/toolkit/react). This is also available with [TypeScript](https://live.yworks.com/demos/toolkit/react-typescript/index.html) (see [GitHub](https://github.com/yWorks/yfiles-for-html-demos/tree/master/demos/toolkit/react-typescript)).
+The yFiles package also contains a more extensive [React integration demo](https://live.yworks.com/demos/toolkit/react/index.html) ([GitHub](https://github.com/yWorks/yfiles-for-html-demos/tree/master/demos/toolkit/react)). This is also available with [TypeScript](https://live.yworks.com/demos/toolkit/react-typescript/index.html) (see [GitHub](https://github.com/yWorks/yfiles-for-html-demos/tree/master/demos/toolkit/react-typescript)).
 
 Furthermore, there is an extensive [Developer's Guide](https://docs.yworks.com/yfileshtml/#/dguide/introduction#top) that covers anything from graph creation and styling to automatic layouts and advanced customizations.
 
