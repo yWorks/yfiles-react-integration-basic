@@ -11,7 +11,7 @@
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4",
-    "yfiles": "../yFiles-for-HTML-Complete-2.5.0.3-Evaluation/lib-dev/yfiles-25.0.3+eval-dev.tgz"
+    "yfiles": "../yFiles-for-HTML-Complete-2.5.0.4-Evaluation/lib-dev/yfiles-25.0.4+eval-dev.tgz"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -19,7 +19,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "postinstall": "npm run copy-eval-license",
-    "copy-eval-license": "node -e \"require('fs').copyFileSync('../yFiles-for-HTML-Complete-2.5.0.3-Evaluation/lib/license.json','./src/license.json')\""
+    "copy-eval-license": "node -e \"require('fs').copyFileSync('../yFiles-for-HTML-Complete-2.5.0.4-Evaluation/lib/license.json','./src/license.json')\""
   },
   "eslintConfig": {
     "extends": [
