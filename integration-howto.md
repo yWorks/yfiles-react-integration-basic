@@ -6,10 +6,14 @@ TL;DR Add `yfiles` as a dependency in the `package.json`,
 [include your license](https://docs.yworks.com/yfileshtml/#/dguide/licensing#_general_concept),
 and start importing yFiles classes in your project.
 
-## Running the CLI
+## Create a `create vite` application
 
-Run the create-react-app CLI with `> npx create-react-app yfiles-react-integration-basic` which
-scaffolds a basic React application.
+At first, create a basic `create vite` app by running `> npm create vite@latest`, e.g., with
+the following options:
+
+- `Project name:` yfiles-react-integration-basic
+- `Select framework:` React
+- `Select variant:` TypeScript
 
 ## Add yFiles as a dependency
 
@@ -20,7 +24,7 @@ Adding yFiles as a dependency is almost as easy as installing an external librar
    ```
    "dependencies": {
      ...
-     "yfiles": "../yFiles-for-HTML-Complete-2.5.0.4-Evaluation/lib-dev/yfiles-25.0.4+eval-dev.tgz"
+     "yfiles": "../yFiles-for-HTML-Complete-2.6-Evaluation/lib-dev/yfiles-26.0.0+eval-dev.tgz"
    },
    ```
 
@@ -37,19 +41,19 @@ of the box to easily work with the library.
 
 With the yFiles dependency, you can easily create a new React component that contains a yFiles GraphComponent.
 
-1. Create a new `ReactGraphComponent.js` file in `/src/` which instantiates a new yFiles GraphComponent
+1. Create a new `ReactGraphComponent.tsx` file in `/src/components` which instantiates a new yFiles GraphComponent
    with editing capabilities and a basic sample graph.
 
    Note how the yFiles GraphComponent is added to the DOM by providing a reference to an empty `div`
    element in which it is supposed to be created.
 
-   See the contents of `/src/ReactGraphComponent.js` in this repository for the full implementation.
+   See the contents of `/src/components/ReactGraphComponent.tsx` in this repository for the full implementation.
 
    Make sure to configure your license data as described above.
 
-2. Afterwards, just add the new React component to the `App.js`.
+2. Afterwards, just add the new React component to the `App.tsx`.
 
-And that's it. Run `npm run start` to serve the application at [http://localhost:3000/](http://localhost:3000/) with a basic yFiles component.
+And that's it. Run `npm run dev` to serve the application at [http://localhost:5173/](http://localhost:5173/) with a basic yFiles component.
 
 ## Development Mode
 

@@ -3,40 +3,30 @@
   "version": "1.0.0",
   "author": "yWorks GmbH <yfileshtml@yworks.com>",
   "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "postinstall": "npm run copy-eval-license",
+    "copy-eval-license": "node -e \"require('fs').copyFileSync('../yFiles-for-HTML-Complete-2.6-Evaluation/lib/license.json','./src/license.json')\""
+  },
   "dependencies": {
-    "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.3.0",
-    "@testing-library/user-event": "^14.3.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4",
-    "yfiles": "../yFiles-for-HTML-Complete-2.5.0.4-Evaluation/lib-dev/yfiles-25.0.4+eval-dev.tgz"
+    "yfiles": "../yFiles-for-HTML-Complete-2.6-Evaluation/lib-dev/yfiles-26.0.0+eval-dev.tgz"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "postinstall": "npm run copy-eval-license",
-    "copy-eval-license": "node -e \"require('fs').copyFileSync('../yFiles-for-HTML-Complete-2.5.0.4-Evaluation/lib/license.json','./src/license.json')\""
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@typescript-eslint/eslint-plugin": "^5.59.0",
+    "@typescript-eslint/parser": "^5.59.0",
+    "@vitejs/plugin-react": "^4.0.0",
+    "eslint": "^8.38.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.3.4",
+    "typescript": "~5.1.6",
+    "vite": "^4.3.9"
   }
 }

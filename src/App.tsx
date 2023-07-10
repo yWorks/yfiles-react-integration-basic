@@ -1,7 +1,6 @@
-import React from 'react'
-import logo from './yfiles-logo.svg'
+import logo from './assets/yfiles-logo.svg'
 import './App.css'
-import ReactGraphComponent from './ReactGraphComponent.js'
+import { ReactGraphComponent } from './components/ReactGraphComponent'
 
 function App() {
   return (
