@@ -24,7 +24,7 @@ Adding yFiles as a dependency is almost as easy as installing an external librar
    ```
    "dependencies": {
      ...
-     "yfiles": "../yFiles-for-HTML-Complete-2.6-Evaluation/lib-dev/yfiles-26.0.0+eval-dev.tgz"
+     "yfiles": "../yFiles-for-HTML-Complete-2.6.0.1-Evaluation/lib-dev/yfiles-26.0.1+eval-dev.tgz"
    },
    ```
 
