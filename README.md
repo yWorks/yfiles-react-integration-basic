@@ -1,6 +1,6 @@
 <img src="src/assets/yfiles-logo.svg" alt="yFiles logo" height="100"/>
 
-# yFiles integration for create-react-app
+# yFiles integration for React
 
 This sample application serves as a basic scaffold of how to integrate [yFiles for HTML](https://www.yworks.com/products/yfiles-for-html) in a [React](https://reactjs.org/) application. It was scaffolded with [create vite](https://vitejs.dev//).
 
