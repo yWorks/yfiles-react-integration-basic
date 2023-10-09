@@ -19,12 +19,12 @@ the following options:
 
 Adding yFiles as a dependency is almost as easy as installing an external library from the npm registry:
 
-1. Add yFiles for HTML as npm dependency to the created project, for example like this:
+1. Add yFiles for HTML as npm dependency to the created project, for example, like this:
 
    ```
    "dependencies": {
      ...
-     "yfiles": "../yFiles-for-HTML-Complete-2.6.0.1-Evaluation/lib-dev/yfiles-26.0.1+eval-dev.tgz"
+     "yfiles": "../yFiles-for-HTML-Complete-2.6.0.2-Evaluation/lib-dev/yfiles-26.0.2+eval-dev.tgz"
    },
    ```
 
@@ -51,7 +51,7 @@ With the yFiles dependency, you can easily create a new React component that con
 
    Make sure to configure your license data as described above.
 
-2. Afterwards, just add the new React component to the `App.tsx`.
+2. Afterward, just add the new React component to the `App.tsx`.
 
 And that's it. Run `npm run dev` to serve the application at [http://localhost:5173/](http://localhost:5173/) with a basic yFiles component.
 
