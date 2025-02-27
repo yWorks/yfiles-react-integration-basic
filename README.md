@@ -8,8 +8,8 @@ This sample application serves as a basic scaffold of how to integrate [yFiles f
 
 ## Version Information
 
-- create vite v9.5.1
-- yFiles for HTML 2.6
+- React 19
+- yFiles for HTML 3.0
 
 ## Getting Started
 

@@ -1,32 +1,32 @@
 {
-  "name": "yfiles-react-integration-basic",
-  "version": "26.0.4",
+  "name": "@yfiles/yfiles-react-integration-basic",
+  "version": "30.0.0",
   "author": "yWorks GmbH <yfileshtml@yworks.com>",
   "private": true,
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "postinstall": "npm run copy-eval-license",
-    "copy-eval-license": "node -e \"require('fs').copyFileSync('../yFiles-for-HTML-Complete-2.6.0.4-Evaluation/lib/license.json','./src/license.json')\""
+    "copy-eval-license": "node -e \"require('fs').copyFileSync('../yFiles-for-HTML-Complete-3.0-Evaluation/lib/license.json','./src/license.json')\""
   },
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "yfiles": "../yFiles-for-HTML-Complete-2.6.0.4-Evaluation/lib-dev/yfiles-26.0.4+eval-dev.tgz"
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "@yfiles/yfiles": "../yFiles-for-HTML-Complete-3.0-Evaluation/lib-dev/yfiles-30.0.3+eval-dev.tgz"
   },
   "devDependencies": {
-    "@types/react": "^18.2.38",
-    "@types/react-dom": "^18.2.17",
-    "@typescript-eslint/eslint-plugin": "^6.12.0",
-    "@typescript-eslint/parser": "^6.12.0",
-    "@vitejs/plugin-react": "^4.2.0",
-    "eslint": "^8.54.0",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.4.4",
-    "typescript": "~5.3.2",
-    "vite": "^5.0.4"
+    "@eslint/js": "^9.19.0",
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^9.19.0",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-react-refresh": "^0.4.18",
+    "globals": "^15.14.0",
+    "typescript": "~5.7.2",
+    "typescript-eslint": "^8.22.0",
+    "vite": "^6.1.0"
   }
 }

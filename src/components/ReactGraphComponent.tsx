@@ -1,5 +1,5 @@
-import { useRef, useMemo, useLayoutEffect } from 'react'
-import { GraphComponent, GraphEditorInputMode, IGraph, License, Point, Rect } from 'yfiles'
+import { useLayoutEffect, useMemo, useRef } from 'react'
+import { GraphComponent, GraphEditorInputMode, IGraph, License, Point, Rect } from '@yfiles/yfiles'
 import licenseData from '../license.json'
 
 License.value = licenseData
@@ -40,7 +40,7 @@ export function ReactGraphComponent() {
 
   useLayoutEffect(() => {
     const gcContainer = graphComponentContainer.current!
-    gcContainer.appendChild(graphComponent.div)
+    gcContainer.appendChild(graphComponent.htmlElement)
     return () => {
       gcContainer.innerHTML = ''
     }
