@@ -1,6 +1,6 @@
 {
   "name": "@yfiles/yfiles-react-integration-basic",
-  "version": "30.0.0",
+  "version": "30.0.1",
   "author": "yWorks GmbH <yfileshtml@yworks.com>",
   "private": true,
   "type": "module",
@@ -9,12 +9,12 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "postinstall": "npm run copy-eval-license",
-    "copy-eval-license": "node -e \"require('fs').copyFileSync('../yFiles-for-HTML-Complete-3.0-Evaluation/lib/license.json','./src/license.json')\""
+    "copy-eval-license": "node -e \"require('fs').copyFileSync('../yFiles-for-HTML-Complete-3.0.0.1-Evaluation/lib/license.json','./src/license.json')\""
   },
   "dependencies": {
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "@yfiles/yfiles": "../yFiles-for-HTML-Complete-3.0-Evaluation/lib-dev/yfiles-30.0.3+eval-dev.tgz"
+    "@yfiles/yfiles": "../yFiles-for-HTML-Complete-3.0.0.1-Evaluation/lib/yfiles-30.0.1+eval-dev.tgz"
   },
   "devDependencies": {
     "@eslint/js": "^9.19.0",
@@ -25,8 +25,8 @@
     "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-react-refresh": "^0.4.18",
     "globals": "^15.14.0",
-    "typescript": "~5.7.2",
+    "typescript": "~5.7.3",
     "typescript-eslint": "^8.22.0",
-    "vite": "^6.1.0"
+    "vite": "^6.2.0"
   }
 }

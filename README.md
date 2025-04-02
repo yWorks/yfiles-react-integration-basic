@@ -2,9 +2,9 @@
 
 # yFiles integration for React
 
-This sample application serves as a basic scaffold of how to integrate [yFiles for HTML](https://www.yworks.com/products/yfiles-for-html) in a [React](https://reactjs.org/) application. It was scaffolded with [create vite](https://vitejs.dev//).
+This sample application serves as a basic scaffold of how to integrate [yFiles for HTML](https://www.yfiles.com/the-yfiles-sdk/web/yfiles-for-html) in a [React](https://reactjs.org/) application. It was scaffolded with [create vite](https://vitejs.dev//).
 
-**To run this project, a valid [yFiles for HTML](https://www.yworks.com/products/yfiles-for-html) version is required. You can evaluate yFiles 60 days free of charge on [my.yworks.com](https://my.yworks.com/signup?product=YFILES_HTML_EVAL).**
+**To run this project, a valid [yFiles for HTML](https://www.yfiles.com/the-yfiles-sdk/web/yfiles-for-html) version is required. You can evaluate yFiles 60 days free of charge on [my.yworks.com](https://my.yworks.com/signup?product=YFILES_HTML_EVAL).**
 
 ## Version Information
 
@@ -39,11 +39,11 @@ A step-by-step description of how to integrate yFiles in a React application can
 
 ## What's next?
 
-This basic yFiles integration can be used as a starting point to test the capabilities of yFiles or to implement your own use case. yFiles for HTML comes with a lot of [source-code demos](https://www.yworks.com/demos) that show different aspects of the library.
+This basic yFiles integration can be used as a starting point to test the capabilities of yFiles or to implement your own use case. yFiles for HTML comes with a lot of [source-code demos](https://www.yfiles.com/demos) that show different aspects of the library.
 
 You can browse through the demos and look for features that you find interesting for your use case and integrate it in this basic component to build a more sophisticated application.
 
-The yFiles package also contains a more extensive [React integration demo](https://www.yworks.com/demos/toolkit/react/) ([GitHub](https://github.com/yWorks/yfiles-for-html-demos/tree/master/demos/toolkit/react)).
+The yFiles package also contains a more extensive [React integration demo](https://www.yfiles.com/demos/toolkit/react/) ([GitHub](https://github.com/yWorks/yfiles-for-html-demos/tree/master/demos/toolkit/react)).
 
 Furthermore, there is an extensive [Developer's Guide](https://docs.yworks.com/yfileshtml/#/dguide/introduction#top) that covers anything from graph creation and styling to automatic layouts and advanced customizations.
 
@@ -52,7 +52,7 @@ Furthermore, there is an extensive [Developer's Guide](https://docs.yworks.com/y
 The [App Generator](https://www.yworks.com/products/app-generator) is a tool that lets you interactively create a diagram
 application prototype to visualize your data. Select features like editing, context menu, graph search, or printing
 and customize the interaction with the graph. Generate React code for your prototype and use it with a valid
-[yFiles for HTML](https://www.yworks.com/products/yfiles-for-html) version.
+[yFiles for HTML](https://www.yfiles.com/the-yfiles-sdk/web/yfiles-for-html) version.
 
 ## Support
 
