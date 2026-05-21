@@ -1,3 +1,7 @@
+> [!IMPORTANT]  
+> # This repository is not maintained.
+> # Please refer to the [yFiles for HTML + React Tutorial](https://github.com/yWorks/yfiles-react-tutorial) instead.
+
 <img src="src/assets/yfiles-logo.svg" alt="yFiles logo" height="100"/>
 
 # yFiles integration for React
